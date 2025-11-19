@@ -181,6 +181,140 @@ l1 loss. Bottom: To find one or more consecutive strokes between a base image an
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-widescreen">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Independent Stroke Replication</h2>
+
+        <!-- Optional: a short intro line (kept centered) -->
+        <!-- <p class="subtitle">A high-level look at the system.</p> -->
+
+        <!-- Image centered; remove if you don't want it -->
+        <figure class="image has-text-centered" style="margin: 1rem auto;">
+          <img src="media/figures/ind_strokes.png" alt="IMPASTO ind" style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Body text matches Abstract's width and justification -->
+        <div class="content has-text-justified">
+          <p>
+            Target brushstrokes from five human artists (two examples per artist) and the strokes reproduced by the robot using different methods. The numbers shown are the weighted l1 loss between the target and the painted strokes. Instances with the best performances are highlighted with bold borders. Overall, IMPASTO-UNet more accurately reproduced human brushstrokes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-widescreen">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Overlaid Stroke Replication</h2>
+
+        <!-- Optional: a short intro line (kept centered) -->
+        <!-- <p class="subtitle">A high-level look at the system.</p> -->
+
+        <!-- Image centered; remove if you don't want it -->
+        <figure class="image has-text-centered" style="margin: 1rem auto;">
+          <img src="media/figures/overlaid_strokes.png" alt="IMPASTO overlaid" style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Body text matches Abstract's width and justification -->
+        <div class="content has-text-justified">
+          <p>
+            Qualitative results showing the target strokes from overlaid strokes and the strokes painted by the robot using different methods. Instances with the best performances are highlighted with bold borders. The base images (canvas states) already have painted strokes. This requires the dynamics models to make accurate predictions given the noisy background. The numbers shown are the weighted l1 loss. Note that the loss is only calculated around the target stroke area. IMPASTO-UNet is more accurate in reproducing human brushstrokes given the noisy base images.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-widescreen">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Closed-loop Multi-step Replication</h2>
+
+        <!-- Optional: a short intro line (kept centered) -->
+        <!-- <p class="subtitle">A high-level look at the system.</p> -->
+
+        <!-- Image centered; remove if you don't want it -->
+        <figure class="image has-text-centered" style="margin: 1rem auto;">
+          <img src="media/figures/planning.png" alt="IMPASTO planning" style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Body text matches Abstract's width and justification -->
+        <div class="content has-text-justified">
+          <p>
+            Qualitative results showing the target paintings and the painting produced by the robot using IMPASTO vs. FRIDA. The planning horizon was set to be five, and the framed images are the targets for MPC. Our method can more accurately reproduce oil paintings.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-widescreen">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Open-loop Single-step Replication</h2>
+
+        <!-- Optional: a short intro line (kept centered) -->
+        <!-- <p class="subtitle">A high-level look at the system.</p> -->
+
+        <!-- Image centered; remove if you don't want it -->
+        <figure class="image has-text-centered" style="margin: 1rem auto;">
+          <img src="media/figures/demo-2.png" alt="IMPASTO demo2" style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Body text matches Abstract's width and justification -->
+        <div class="content has-text-justified">
+          <p>
+            IMPASTO was able to replicate a complex oil painting with 40 strokes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>  
+
+
+<section class="section">
+  <div class="container is-max-widescreen">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">More Demos</h2>
+
+        <!-- Two images side-by-side -->
+        <div class="columns is-mobile is-centered">
+          <div class="column">
+            <figure class="image">
+              <img src="media/figures/landscape.png" alt="IMPASTO landscape">
+            </figure>
+          </div>
+
+          <div class="column">
+            <figure class="image">
+              <img src="media/figures/pearl.png" alt="IMPASTO pearl">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Optional text under the pair -->
+        <div class="content has-text-justified">
+          <p>
+            IMPASTO was able to replicate complex oil paintings using ~200 strokes.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <section class="section hide" id="comparison">
   <div class="container is-max-widescreen">
