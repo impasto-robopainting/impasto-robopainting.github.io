@@ -141,13 +141,39 @@
 
         <!-- Image centered; remove if you don't want it -->
         <figure class="image has-text-centered" style="margin: 1rem auto;">
-          <img src="media/figures/method.png" alt="IMPASTO method overview" style="max-width: 100%; height: auto;">
+          <img src="media/figures/overview.png" alt="IMPASTO method overview" style="max-width: 100%; height: auto;">
         </figure>
 
         <!-- Body text matches Abstract's width and justification -->
         <div class="content has-text-justified">
           <p>
             IMPASTO is a robotic oil painting system that integrates learned neural dynamics models with model-based planning algorithms to accurately replicate human artists' brushstrokes and artworks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-widescreen">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+
+        <!-- Optional: a short intro line (kept centered) -->
+        <!-- <p class="subtitle">A high-level look at the system.</p> -->
+
+        <!-- Image centered; remove if you don't want it -->
+        <figure class="image has-text-centered" style="margin: 1rem auto;">
+          <img src="media/figures/method.png" alt="IMPASTO method" style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Body text matches Abstract's width and justification -->
+        <div class="content has-text-justified">
+          <p>
+            Overview of the learning and planning framework. Top: IMPASTO-UNet's neural pixel dynamics model, which combines an image encoder and an action encoder to predict the effect of a stroke. The model is trained using a weighted
+l1 loss. Bottom: To find one or more consecutive strokes between a base image and a target image, an MPC-based planner optimizes stroke parameters with a weighted l1 image objective in a receding-horizon, closed loop.
           </p>
         </div>
       </div>
