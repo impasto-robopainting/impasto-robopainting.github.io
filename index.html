@@ -74,7 +74,7 @@
 
             <!-- Code coming soon -->
             <a class="button disabled" aria-disabled="true" tabindex="-1">
-              <i class="fas fa-code" aria-hidden="true"></i>&emsp14;Code (coming soon)
+              <i class="fas fa-code" aria-hidden="true"></i>&emsp14;Code
             </a>
           
             <!-- keep others hidden for now -->
@@ -117,7 +117,7 @@
               muted
               loop
               controls
-              style="width: 100%; max-width: 400px; height: auto;"
+              style="width: 100%; max-width: 300px; height: auto;"
             >
               <source src="media/videos/pearl_400.mp4" type="video/mp4">
             </video>
@@ -128,7 +128,7 @@
               <img
                 src="media/figures/pearl.png"
                 alt="IMPASTO Pearl"
-                style="width: 100%; max-width: 400px; height: auto;"
+                style="width: 100%; max-width: 600px; height: auto;"
               >
             </figure>
           </div>
@@ -143,7 +143,7 @@
               muted
               loop
               controls
-              style="width: 100%; max-width: 400px; height: auto;"
+              style="width: 100%; max-width: 300px; height: auto;"
             >
               <source src="media/videos/landscape_400.mp4" type="video/mp4">
             </video>
@@ -154,7 +154,7 @@
               <img
                 src="media/figures/landscape.png"
                 alt="IMPASTO Landscape"
-                style="width: 100%; max-width: 400px; height: auto;"
+                style="width: 100%; max-width: 600px; height: auto;"
               >
             </figure>
           </div>
@@ -344,7 +344,7 @@ l1 loss. Bottom: To find one or more consecutive strokes between a base image an
         <!-- Body text matches Abstract's width and justification -->
         <div class="content has-text-justified">
           <p>
-            IMPASTO was able to replicate a complex oil painting with 40 strokes.
+            IMPASTO was able to replicate a complex oil painting with single-step planning.
           </p>
         </div>
       </div>
@@ -357,10 +357,10 @@ l1 loss. Bottom: To find one or more consecutive strokes between a base image an
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">More Demos</h2>
+        <h2 class="title is-3">Failure cases</h2>
 
         <!-- Two images side-by-side -->
-        <div class="columns is-mobile is-centered">
+        <!-- <div class="columns is-mobile is-centered">
           <div class="column">
             <figure class="image">
               <img src="media/figures/landscape.png" alt="IMPASTO landscape">
@@ -372,12 +372,25 @@ l1 loss. Bottom: To find one or more consecutive strokes between a base image an
               <img src="media/figures/pearl.png" alt="IMPASTO pearl">
             </figure>
           </div>
+        </div> -->
+
+        <!-- Video -->
+        <div class="column is-max-desktop">
+          <video
+            autoplay
+            muted
+            loop
+            controls
+            style="width: 100%; max-width: 1920px; height: auto;"
+          >
+            <source src="media/videos/failures.mp4" type="video/mp4">
+          </video>
         </div>
 
         <!-- Optional text under the pair -->
         <div class="content has-text-justified">
           <p>
-            IMPASTO was able to replicate complex oil paintings using ~200 strokes.
+            Failure mode: worn-out brush and overly dry or wet pigments introduce stochasticity during execution even though the prediction and planning are accurate.
           </p>
         </div>
 
