@@ -92,7 +92,8 @@ body {
 
 .publication-title {
   font-family: 'Google Sans', sans-serif;
-  max-width: 38rem;
+  max-width: 60rem;
+  margin: 0.5rem auto;
   color: #8C1515;
 }
 
