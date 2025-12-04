@@ -92,6 +92,7 @@ body {
 
 .publication-title {
   font-family: 'Google Sans', sans-serif;
+  max-width: 38rem;
   color: #8C1515;
 }
 
