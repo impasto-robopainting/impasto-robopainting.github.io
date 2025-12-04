@@ -14,6 +14,19 @@ body {
   margin-right:auto;
 }
 
+.media-row {
+  margin-top: 1.5rem;
+}
+
+.media-same-height {
+  height: 260px;       
+  max-width: 100%;
+  width: auto;
+  object-fit: contain; 
+  display: block;
+  margin: 0 auto;
+}
+
 .task-picker{
   display:flex;                 /* put label + select on the same row   */
   justify-content:center;       /* centre the pair in its parent        */
