@@ -47,8 +47,8 @@
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               Yingke Wang<sup>1</sup>, Hao Li<sup>1</sup>, Yifeng Zhu<sup>2</sup>, 
-              Koven Yu<sup>1</sup>, <br>
-              Ken Goldberg<sup>3</sup>, Li Fei-Fei<sup>1</sup>, Jiajun Wu<sup>1</sup>, Yunzhu Li<sup>4</sup>, 
+              Koven Yu<sup>1</sup>, Ken Goldberg<sup>3</sup>,<br>
+              Li Fei-Fei<sup>1</sup>, Jiajun Wu<sup>1</sup>, Yunzhu Li<sup>4</sup>, 
               Ruohan Zhang<sup>1</sup>
             </span>
             <br><br>
@@ -70,6 +70,11 @@
             <!-- Paper (visible) -->
             <a href="media/paper.pdf" target="_blank" class="button">
               <i class="fas fa-file-pdf" aria-hidden="true"></i>&emsp14;Paper
+            </a>
+
+            <!-- Code coming soon -->
+            <a class="button disabled" aria-disabled="true" tabindex="-1">
+              <i class="fas fa-code" aria-hidden="true"></i>&emsp14;Code (coming soon)
             </a>
           
             <!-- keep others hidden for now -->
@@ -97,28 +102,69 @@
 </section>
 
 <!-- ===== TEASER VIDEO (visible) ===== -->
+<!-- ===== TEASER VIDEO (visible) ===== -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <div class="container">
+
+        <!-- Row 1: Pearl -->
         <div class="columns is-vcentered is-centered">
-          <!-- EDIT: video sources; put your MP4 at media/videos/teaser.mp4 or change the src -->
-          <video id="teaser" autoplay muted loop controls height="80%" width="80%" poster="media/figures/method.png">
-            <source src="media/videos/teaser.mp4" type="video/mp4">
-            <!-- Optional fallback using an existing webm in your repo -->
-            <source src="static/images/steve.webm" type="video/webm">
-          </video>
-          </br>
+          <!-- Video -->
+          <div class="column is-half has-text-centered">
+            <video
+              autoplay
+              muted
+              loop
+              controls
+              style="width: 100%; max-width: 400px; height: auto;"
+            >
+              <source src="media/videos/pearl_400.mp4" type="video/mp4">
+            </video>
+          </div>
+          <!-- Image -->
+          <div class="column is-half has-text-centered">
+            <figure class="image" style="display: inline-block;">
+              <img
+                src="media/figures/pearl.png"
+                alt="IMPASTO Pearl"
+                style="width: 100%; max-width: 400px; height: auto;"
+              >
+            </figure>
+          </div>
         </div>
-        <br>
-        <!-- EDIT: one-line tagline under the video -->
-        <!-- <h2 class="subtitle has-text-centered">
-          [EDIT] One-line highlight of your method or key result.
-        </h2> -->
+
+        <!-- Row 2: Landscape -->
+        <div class="columns is-vcentered is-centered" style="margin-top: 1.5rem;">
+          <!-- Video -->
+          <div class="column is-half has-text-centered">
+            <video
+              autoplay
+              muted
+              loop
+              controls
+              style="width: 100%; max-width: 400px; height: auto;"
+            >
+              <source src="media/videos/landscape_400.mp4" type="video/mp4">
+            </video>
+          </div>
+          <!-- Image -->
+          <div class="column is-half has-text-centered">
+            <figure class="image" style="display: inline-block;">
+              <img
+                src="media/figures/landscape.png"
+                alt="IMPASTO Landscape"
+                style="width: 100%; max-width: 400px; height: auto;"
+              >
+            </figure>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- ===== ABSTRACT (visible) ===== -->
 <section class="section">
@@ -219,7 +265,7 @@ l1 loss. Bottom: To find one or more consecutive strokes between a base image an
         <!-- Body text matches Abstract's width and justification -->
         <div class="content has-text-justified">
           <p>
-            Target brushstrokes from five human artists (two examples per artist) and the strokes reproduced by the robot using different methods. The numbers shown are the weighted l1 loss between the target and the painted strokes. Instances with the best performances are highlighted with bold borders. Overall, IMPASTO-UNet more accurately reproduced human brushstrokes.
+            Target brushstrokes from five human artists (two examples per artist from the overall 60 strokes) and the strokes reproduced by the robot using different methods. The numbers shown are the weighted l1 loss between the target and the painted strokes. Instances with the best performances are highlighted with bold borders. Overall, IMPASTO-UNet more accurately reproduced human brushstrokes.
           </p>
         </div>
       </div>
