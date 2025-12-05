@@ -461,7 +461,7 @@ hr.rounded {
 .overlaid-media {
   height: 200px;            
   width: auto;
-  max-width: 100%;
+  max-width: 80%;
   object-fit: contain;      
   display: block;
 }
