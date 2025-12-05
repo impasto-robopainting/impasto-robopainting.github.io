@@ -225,6 +225,16 @@
 
         <!-- Image centered; remove if you don't want it -->
         <div class="columns is-vcentered is-centered" style="margin-top: 1.5rem;">
+          <!-- Image -->
+          <div class="column is-half has-text-centered">
+            <figure class="image" style="display: inline-block;">
+              <img
+                src="media/figures/action.png"
+                alt="IMPASTO Landscape"
+                style="width: 100%; max-width: 600px; height: auto;"
+              >
+            </figure>
+          </div>
           <!-- Video -->
           <div class="column is-half has-text-centered">
             <video
@@ -237,20 +247,11 @@
               <source src="media/videos/forces.mp4" type="video/mp4">
             </video>
           </div>
-          <!-- Image -->
-          <div class="column is-half has-text-centered">
-            <figure class="image" style="display: inline-block;">
-              <img
-                src="media/figures/action.png"
-                alt="IMPASTO Landscape"
-                style="width: 100%; max-width: 600px; height: auto;"
-              >
-            </figure>
-          </div>
+          
         </div>
         <div class="content has-text-justified">
           <p>
-            We control the arm in joint-impedance mode with force injection and run a force-control loop along the surface normal. At the beginning of each stroke, a normal-direction admittance accumulates a smoothed feedforward force. 
+            To concisely and expressively represent the strokes, we define 10 parameters including starting positions, tilting angle, RGBA, length, bend, and most importantly, force, to form the stroke as either a straight line or a parabolic curve. We then control the arm in joint-impedance mode with force injection and run a force-control loop along the surface normal. At the beginning of each stroke, a normal-direction admittance accumulates a smoothed feedforward force. 
           </p>
         </div>
 
