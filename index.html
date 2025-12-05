@@ -224,6 +224,36 @@
         <!-- <p class="subtitle">A high-level look at the system.</p> -->
 
         <!-- Image centered; remove if you don't want it -->
+        <div class="columns is-vcentered is-centered" style="margin-top: 1.5rem;">
+          <!-- Video -->
+          <div class="column is-half has-text-centered">
+            <video
+              autoplay
+              muted
+              loop
+              controls
+              style="width: 100%; max-width: 300px; height: auto;"
+            >
+              <source src="media/videos/forces.mp4" type="video/mp4">
+            </video>
+          </div>
+          <!-- Image -->
+          <div class="column is-half has-text-centered">
+            <figure class="image" style="display: inline-block;">
+              <img
+                src="media/figures/action.png"
+                alt="IMPASTO Landscape"
+                style="width: 100%; max-width: 600px; height: auto;"
+              >
+            </figure>
+          </div>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            We control the arm in joint-impedance mode with force injection and run a force-control loop along the surface normal. At the beginning of each stroke, a normal-direction admittance accumulates a smoothed feedforward force. 
+          </p>
+        </div>
+
         <figure class="image" style="margin: 1rem auto; display: block;">
           <img
             src="media/figures/method_paper.png"
@@ -239,7 +269,7 @@
 l1 loss. Bottom: To find one or more consecutive strokes between a base image and a target image, an MPC-based planner optimizes stroke parameters with a weighted l1 image objective in a receding-horizon, closed loop.
           </p>
         </div>
-        <div class="columns is-vcentered is-centered is-gapless">
+        <!-- <div class="columns is-vcentered is-centered is-gapless">
           <div class="overlaid-row">
             <video
               class="overlaid-media"
@@ -257,12 +287,8 @@ l1 loss. Bottom: To find one or more consecutive strokes between a base image an
               alt="IMPASTO overlaid"
             >
           </div>
-        </div>
-        <div class="content has-text-justified">
-          <p>
-            We control the arm in joint-impedance mode with force injection and run a force-control loop along the surface normal. At the beginning of each stroke, a normal-direction admittance accumulates a smoothed feedforward force. 
-          </p>
-        </div>
+        </div> -->
+               
 
         <div class="column is-max-desktop">
           <video
