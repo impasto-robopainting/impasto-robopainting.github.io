@@ -317,42 +317,24 @@ l1 loss. Bottom: To find one or more consecutive strokes between a base image an
         <h2 class="title is-3">Overlaid Stroke Replication</h2>
 
         <div class="columns is-vcentered is-centered is-gapless">
-          <!-- 左：Video -->
-          <div class="column is-half has-text-centered">
+          <div class="overlaid-row">
+            <!-- 左：Video -->
             <video
+              class="overlaid-media"
               autoplay
               muted
               loop
               controls
-              style="
-                height: 260px;
-                width: auto;
-                max-width: 100%;
-                display: block;
-                margin: 0 auto;
-                object-fit: contain;
-              "
             >
               <source src="media/videos/overlaid_strokes.mp4" type="video/mp4">
             </video>
-          </div>
-        
-          <!-- 右：Image -->
-          <div class="column is-half has-text-centered">
-            <figure class="image" style="display: inline-block; margin: 0;">
-              <img
-                src="media/figures/overlaid_strokes.png"
-                alt="IMPASTO overlaid"
-                style="
-                  height: 260px;
-                  width: auto;
-                  max-width: 100%;
-                  display: block;
-                  margin: 0 auto;
-                  object-fit: contain;
-                "
-              >
-            </figure>
+          
+            <!-- 右：Image -->
+            <img
+              class="overlaid-media"
+              src="media/figures/overlaid_strokes.png"
+              alt="IMPASTO overlaid"
+            >
           </div>
         </div>
         

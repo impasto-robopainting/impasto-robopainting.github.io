@@ -450,6 +450,22 @@ hr.rounded {
   border-radius: 50%;
 }
 
+.overlaid-row {
+  display: flex;
+  justify-content: center; 
+  align-items: center;      
+  gap: 0.5rem;              
+  margin-top: 1.5rem;
+}
+
+.overlaid-media {
+  height: 260px;            
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;      
+  display: block;
+}
+
 input:checked + .slider {
   background-color: #4CAF50;  /* green when on */
 }
